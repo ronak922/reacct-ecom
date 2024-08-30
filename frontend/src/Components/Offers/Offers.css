@@ -1,0 +1,111 @@
+.offers {
+    width: 90%;
+    /* Adjusted for better responsiveness */
+    max-width: 1200px;
+    /* Limits max width */
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    padding: 0 20px;
+    /* Reduced padding for responsiveness */
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    box-sizing: border-box;
+    /* Ensures padding is included in width */
+    border-radius: 15px;
+    /* Optional: rounded corners for container */
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    /* Added padding */
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 3rem;
+    /* Responsive font size */
+    font-weight: 600;
+    margin: 0;
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 1.4rem;
+    /* Adjusted font size */
+    font-weight: 600;
+    margin: 10px 0;
+    /* Adjusted spacing */
+}
+
+.offers-left button {
+    width: 100%;
+    /* Full width for responsiveness */
+    max-width: 282px;
+    /* Limits button width */
+    height: 70px;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    /* Responsive font size */
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.offers-left button:hover {
+    background: #e60000;
+    /* Darker color on hover */
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center image */
+    padding-top: 20px;
+    /* Adjusted padding */
+}
+
+.offers-right img {
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 15px;
+    /* Optional: rounded corners for image */
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .offers {
+        flex-direction: column;
+        height: auto;
+        /* Adjust height for smaller screens */
+        padding: 20px;
+    }
+    .offers-left h1 {
+        font-size: 2rem;
+    }
+    .offers-left p {
+        font-size: 1rem;
+    }
+    .offers-left button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .offers-right {
+        padding-top: 0;
+        /* Remove padding on smaller screens */
+        margin-top: 20px;
+    }
+}

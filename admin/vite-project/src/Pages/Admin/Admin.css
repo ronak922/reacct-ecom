@@ -1,0 +1,61 @@
+/* Admin.css */
+
+.admin {
+    display: flex;
+    flex-direction: column;
+    /* Stack Navbar and Sidebar vertically */
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    /* Adjust height as needed */
+    background-color: #333;
+    /* Example background color for Navbar */
+    color: #fff;
+    /* Text color for Navbar */
+    position: fixed;
+    /* Fix Navbar at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* Ensure Navbar stays on top */
+}
+
+.admin-layout {
+    display: flex;
+    margin-top: 60px;
+    /* Offset content by Navbar height */
+    height: calc(100vh - 60px);
+    /* Adjust height to fill remaining space */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    position: fixed;
+    /* Fixed Sidebar */
+    top: 60px;
+    /* Position Sidebar below Navbar */
+    left: 0;
+    bottom: 0;
+    z-index: 500;
+    /* Ensure Sidebar is below Navbar */
+}
+
+.admin-content {
+    margin-left: 250px;
+    /* Offset content to avoid overlap with Sidebar */
+    padding: 20px;
+    overflow-y: auto;
+    /* Allow scrolling if content overflows */
+    background-color: #f9f9f9;
+    width: calc(100% - 250px);
+    /* Adjust width based on Sidebar */
+}

@@ -1,0 +1,8 @@
+.breadcrum {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrum img {
+    margin: 0 5px;
+}

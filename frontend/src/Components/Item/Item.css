@@ -1,0 +1,64 @@
+.item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.item-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-price-new {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e91e63;
+    margin-bottom: 5px;
+}
+
+.item-price-old {
+    font-size: 14px;
+    color: #777;
+    text-decoration: line-through;
+}
+
+.item.new-arrival .item-name {
+    color: #4caf50;
+    /* Special styling for new arrivals */
+}
+
+.item.sale .item-price-new {
+    color: #f44336;
+    /* Special styling for sale items */
+}
+
+.item.sale .item-price-old {
+    color: #f44336;
+}

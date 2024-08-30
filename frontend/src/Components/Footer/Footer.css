@@ -1,0 +1,133 @@
+/* General footer styling */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    /* Adjusted gap for better spacing */
+    padding: 20px;
+    /* Added padding for better spacing */
+    background-color: #f9f9f9;
+    /* Added background color for the footer */
+}
+
+
+/* Logo styling */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Reduced gap for a more compact look */
+}
+
+.footer-logo p {
+    color: #333;
+    /* Slightly lighter color for better readability */
+    font-size: 48px;
+    /* Slight increase in font size for prominence */
+    font-weight: bold;
+    /* Using 'bold' instead of numeric weight */
+}
+
+
+/* Links styling */
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    /* Reduced gap for a more compact look */
+    color: #444;
+    /* Darker color for better readability */
+    font-size: 18px;
+    /* Slightly smaller font size for links */
+}
+
+.footer-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* Added transition for hover effect */
+}
+
+.footer-links li:hover {
+    color: #007bff;
+    /* Change color on hover for better interaction */
+}
+
+
+/* Social icons styling */
+
+.footer-social-icon {
+    display: flex;
+    gap: 15px;
+    /* Reduced gap for a more compact look */
+    margin-bottom: 20px;
+}
+
+.footer-icon-container {
+    padding: 8px;
+    /* Reduced padding for a more compact look */
+    background: #ffffff;
+    /* Changed background for better contrast */
+    border: 1px solid #e0e0e0;
+    /* Slightly lighter border */
+    border-radius: 50%;
+    /* Rounded container for icons */
+    transition: background 0.3s ease;
+    /* Added transition for hover effect */
+}
+
+.footer-icon-container:hover {
+    background: #f0f0f0;
+    /* Change background on hover */
+}
+
+
+/* Copyright section styling */
+
+.footer-copyright {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* Reduced gap for a more compact look */
+    width: 100%;
+    color: #555;
+    /* Slightly lighter color for text */
+    font-size: 16px;
+    /* Reduced font size for a more balanced look */
+}
+
+.footer-copyright hr {
+    width: 90%;
+    /* Increased width for a more prominent line */
+    border-radius: 10px;
+    height: 2px;
+    /* Reduced height for a thinner line */
+    background: #ccc;
+    /* Slightly lighter color for the line */
+    border: none;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+        /* Adjusted gap for smaller screens */
+    }
+    .footer-logo p {
+        font-size: 36px;
+        /* Adjusted font size for smaller screens */
+    }
+    .footer-copyright {
+        font-size: 14px;
+        /* Adjusted font size for smaller screens */
+    }
+}

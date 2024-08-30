@@ -1,0 +1,149 @@
+/* Popular.css */
+
+
+/* Container for the popular products section */
+
+.popular-women {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    /* Ensures consistent font styling */
+}
+
+
+/* Title styling */
+
+.popular-women h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    /* Center aligns the title */
+}
+
+
+/* Container for product items */
+
+.popular-women-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    /* Consistent spacing between items */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center aligns the grid */
+    padding: 0 1rem;
+    /* Padding for responsiveness */
+}
+
+
+/* Styling for individual product items */
+
+.popular-women-products .item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-women-products .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Styling for images within items */
+
+.popular-women-products .item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    /* Adds a border between image and text */
+}
+
+
+/* Styling for item information */
+
+.popular-women-products .item .item-info {
+    padding: 1rem;
+}
+
+
+/* Styling for item names */
+
+.popular-women-products .item .item-info h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 0.5rem;
+}
+
+
+/* Container for prices within each item */
+
+.popular-women-products .item .item-prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Style for new price */
+
+.popular-women-products .item .item-prices .new-price {
+    font-size: 1.2rem;
+    color: #e44d26;
+    /* Matches your primary color */
+    font-weight: bold;
+}
+
+
+/* Style for old price (if applicable) */
+
+.popular-women-products .item .item-prices .old-price {
+    font-size: 1rem;
+    color: #818181;
+    text-decoration: line-through;
+}
+
+
+/* Load more button styling */
+
+.popular-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 0;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 1.125rem;
+    /* 18px */
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popular-loadmore:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Responsive design for small screens */
+
+@media (max-width: 768px) {
+    .popular-women-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .popular-women-products {
+        grid-template-columns: 1fr;
+    }
+}

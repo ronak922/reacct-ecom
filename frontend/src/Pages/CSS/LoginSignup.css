@@ -1,0 +1,77 @@
+.loginsignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.loginsignup-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.loginsignup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginsignup-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginsignup-field label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.loginsignup-field input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.loginsignup-agree input {
+    margin-right: 10px;
+}
+
+.loginsignup button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.loginsignup button:hover {
+    background-color: #0056b3;
+}
+
+.loginsignup-login {
+    text-align: center;
+}
+
+.loginsignup-login a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.loginsignup-login a:hover {
+    text-decoration: underline;
+}
